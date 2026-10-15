@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy and data handling for the personal-use IIS Windows desktop application.">
+  <title>Privacy policy | Investment Intelligence System</title>
+  <!-- GOOGLE SEARCH CONSOLE VERIFICATION PLACEHOLDER: Insert the verification meta tag supplied for the approved public website here before ownership verification. -->
+  <style>:root{color-scheme:light;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;color:#172638;background:#f5f7fa;line-height:1.65}*{box-sizing:border-box}body{margin:0}header,main,footer{max-width:820px;margin:auto;padding:28px 24px}header{display:flex;justify-content:space-between;align-items:center;gap:20px;border-bottom:1px solid #d8e0e8}header strong{font-size:.95rem}nav{display:flex;gap:18px}a{color:#164e91;text-underline-offset:3px}a:hover{color:#10386a}a:focus-visible{outline:3px solid #9ac2ed;outline-offset:4px}main{padding-top:48px;padding-bottom:48px}h1,h2{line-height:1.2;letter-spacing:-.025em}h1{font-size:clamp(2rem,5vw,2.8rem);margin:12px 0 24px}h2{font-size:1.2rem;margin:32px 0 10px}p{margin:12px 0}.eyebrow,.meta{color:#526375;font-size:.9rem}.eyebrow{font-weight:650;text-transform:uppercase;letter-spacing:.09em}.lead{font-size:1.16rem}.panel{padding:22px 26px;margin:28px 0;background:#fff;border:1px solid #d8e0e8;border-radius:12px}.panel h2{margin-top:0}footer{border-top:1px solid #d8e0e8;color:#526375;font-size:.9rem;padding-bottom:36px}@media(max-width:520px){header{align-items:flex-start;flex-direction:column}main{padding-top:30px}.panel{padding:18px}}</style>
+</head>
+<body>
+  <header><strong>Investment Intelligence System</strong><nav aria-label="Main navigation"><a href="index.html">Home</a><a href="privacy.html">Privacy policy</a></nav></header>
+  <main id="main">
+    <p class="eyebrow">Personal-use application</p>
+    <h1>Privacy policy</h1>
+    <p class="meta">Last updated: 15 October 2026</p>
+    <p>This policy describes the current personal-use Windows desktop application Investment Intelligence System (IIS) and its informational website. IIS supports investment research and information management; it is not an automated trading service.</p>
+    <section aria-labelledby="access-heading">
+      <h2 id="access-heading">Information accessed and its purpose</h2>
+      <p>IIS uses your Google email address, verified-email status, and Google account identifier to verify the authorized account. It obtains OAuth access and refresh tokens to maintain the authorized connection.</p>
+      <p>For Google Drive documents you explicitly select and permit for retrieval, IIS may access document identifiers, titles, revision and modification information, and document content. It uses this information to organize research, record sources and retrieval times, and retain local historical snapshots.</p>
+      <p>Google's per-file authorization can include permissions broader than reading. IIS's document adapter nevertheless operates read-only and enforces its own retrieval allowlist. It does not upload, edit, or delete Google documents.</p>
+    </section>
+    <section aria-labelledby="storage-heading">
+      <h2 id="storage-heading">Local storage and credential protection</h2>
+      <p>OAuth access and refresh tokens are stored locally using Windows Data Protection API (DPAPI) encryption tied to the Windows user. During Google document selection, a temporary access token is supplied to the browser-based Google Picker; refresh tokens remain outside the browser.</p>
+      <p>Document snapshots, local databases, research contexts, outputs, and execution records may contain retrieved content or derived information. These records are not automatically encrypted by the OAuth credential-protection mechanism. Their protection depends on local device, account, disk-encryption, and backup settings.</p>
+    </section>
+    <section aria-labelledby="processing-heading">
+      <h2 id="processing-heading">Google and AI-provider processing</h2>
+      <p>Google processes information needed for account authorization, document selection, and document retrieval.</p>
+      <p>When the operator configures and explicitly authorizes a live AI research run, selected research context may be sent to OpenAI through its API. That context can include Google document content, information derived from it, and research results. Offline simulation or Google document retrieval alone does not send that content to an AI provider.</p>
+      <p>The current OpenAI integration requests that responses not be stored through the API's response-storage option. This is not a guarantee of zero provider retention or processing. Provider handling is also governed by the applicable account settings, agreements, and privacy terms.</p>
+      <p>IIS does not sell Google user data or use it for advertising.</p>
+      <p>Google user data is used only to provide the application's research and information-management functionality, subject to the disclosures above.</p>
+    </section>
+    <section aria-labelledby="retention-heading">
+      <h2 id="retention-heading">Retention and deleting local data</h2>
+      <p>Historical snapshots and research records are retained locally until the operator removes them. IIS does not currently apply an automatic retention period or provide an in-app erase-all function.</p>
+      <p>To delete locally retained data, stop IIS and remove the relevant local document registry, snapshots, research records, and any copies or backups you control. Deleting an entire registry also removes its stored history. Contact the address below for help identifying the relevant data. Deleting one record or revoking Google access does not automatically delete copies in other records, backups, or provider systems.</p>
+    </section>
+    <section aria-labelledby="revoke-heading">
+      <h2 id="revoke-heading">Revoking Google access</h2>
+      <p>You can revoke authorization in your Google Account under Security, in the section for connections to third-party apps and services. Select the IIS connection and remove its access. Google may display the application's domain instead of its name.</p>
+      <p>Revocation prevents further authorized Google access once the revocation takes effect. To remove saved credentials from the computer as well, stop IIS and delete its locally stored authorization credentials. Neither action deletes your original Google documents or automatically removes local historical snapshots.</p>
+    </section>
+    <section aria-labelledby="website-heading">
+      <h2 id="website-heading">Website and contact</h2>
+      <p>These informational pages contain no application-added analytics, tracking scripts, external fonts, or advertising. A hosting provider may process ordinary connection information when serving the pages under its own privacy practices.</p>
+      <p>Privacy questions and local data-deletion assistance: <a href="mailto:jasper.muehring@gmail.com">jasper.muehring@gmail.com</a>.</p>
+      <p>This policy will be updated if IIS's data-handling practices change.</p>
+    </section>
+  </main>
+</body>
+</html>
